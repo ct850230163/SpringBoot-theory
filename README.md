@@ -52,7 +52,6 @@ Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了
 （图片是从别人那里copy来的 侵删）
 
 
-
 这里面很重要的是接口 ImportSelector有一个方法为：**selectImports()** 而AutoConfigurationImportSelector 实现了这个方法，如下图所示：
 
 ![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/clipboard2.png)
@@ -63,11 +62,11 @@ Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了
 
 这个方法里面用到了一个类 SpringFactoriesLoader 这个类属于Spring框架私有的一种扩展方案，其主要功能就是从指定的配置文件META-INF/spring.factories加载配置类。
 
-看下图：
+具体的方法看下图：
 
 ![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/clipboard5.png)
 
-而这个指定的配置文件位置在这里：
+现在我们看看那个指定的配置文件里面有什么东西，看下图
 
 ![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/clipboard4.png)
 
