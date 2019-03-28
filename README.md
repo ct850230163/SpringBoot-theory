@@ -66,7 +66,7 @@ Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了
 
 ![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/clipboard5.png)
 
-现在我们看看那个指定的配置文件里面有什么东西，看下图
+现在我们看看那个指定的配置文件里面有什么东西，看下图：
 
 ![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/clipboard4.png)
 
