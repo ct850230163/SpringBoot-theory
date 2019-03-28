@@ -7,7 +7,7 @@
 
 **1.springboot 启动流程图**
 
-[启动流程](./springboot-启动流程.png)
+![img](<https://github.com/ct850230163/SpringBoot-theory/blob/master/images/springboot-%E5%90%AF%E5%8A%A8%E5%8E%9F%E7%90%86.png>)
 
 
 
