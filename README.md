@@ -25,7 +25,7 @@
 
 Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了另外三个注解分别是
 
-<font color="Blue"> @Configuration </font>（其实依赖的是@SpringBootConfiguration 但是点开发现还是依赖的@Configuration） ，<font color="Blue"> @EnableAutoConfiguration</font> ，<font color="Blue"> @ComponentScan </font>
+<font color="blue"> @Configuration </font>（其实依赖的是@SpringBootConfiguration 但是点开发现还是依赖的@Configuration） ，<font color="Blue"> @EnableAutoConfiguration</font> ，<font color="Blue"> @ComponentScan </font>
 
 ![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20190328165544.png)
 
