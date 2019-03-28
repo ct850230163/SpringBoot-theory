@@ -7,7 +7,7 @@
 
 **1.springboot 启动流程图**
 
-![](C:\Users\asus\Desktop\springboot-启动原理.png)
+[启动流程](./springboot-启动流程.png)
 
 
 
