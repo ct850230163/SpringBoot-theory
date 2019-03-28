@@ -12,7 +12,7 @@
 
 **2.springboot原理图**
 
-![img](C:\Users\asus\Desktop\springboot原理图.png)
+![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/springboot%E5%8E%9F%E7%90%86%E5%9B%BE.png)
 
 说一下我自己的理解 ：
 
@@ -20,7 +20,7 @@ Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了
 
 @Configuration（其实依赖的是@SpringBootConfiguration 但是点开发现还是依赖的@Configuration） ，@EnableAutoConfiguration ，@ComponentScan 
 
-![img](C:\Users\asus\Desktop\微信截图_20190328165544.png)
+![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20190328165544.png)
 
 
 
@@ -36,7 +36,7 @@ Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了
 
 这个类是怎么实现的呢？  我们来分析一下：
 
-![img](C:\Users\asus\Desktop\clipboard1.png)
+![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/clipboard1.png)
 
 主要是引入了这个组件类 EnableAutoConfigurationImportSelector ，而这个类也是继承了父类AutoConfigurationImportSelector, 我们一路找可以找到这样的继承关系
 
@@ -48,7 +48,7 @@ Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了
 
 这里面很重要的是接口 ImportSelector有一个方法为：**selectImports，**而AutoConfigurationImportSelector 实现了这个方法，如下图所示：
 
-![img](file:///c:/users/asus/appdata/local/ynote/data/m13037188107_1@163.com/be8bc2b86a614e31a3cfafd68e242873/clipboard.png)
+![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/1112095-20181115152043749-1596939041.png)
 
 上图里面看一下第二个标记的地方 这里有个方法是获取一个集合的，可以发现这个集合就是配置类集合 ，点击这个方法就跳到了另外一个方法 如下图：
 
