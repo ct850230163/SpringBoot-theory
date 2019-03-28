@@ -53,23 +53,23 @@ Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了
 
 
 
-这里面很重要的是接口 ImportSelector有一个方法为：**selectImports，**而AutoConfigurationImportSelector 实现了这个方法，如下图所示：
+这里面很重要的是接口 ImportSelector有一个方法为：**selectImports()** 而AutoConfigurationImportSelector 实现了这个方法，如下图所示：
 
-![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/1112095-20181115152043749-1596939041.png)
+![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/clipboard2.png)
 
 上图里面看一下第二个标记的地方 这里有个方法是获取一个集合的，可以发现这个集合就是配置类集合 ，点击这个方法就跳到了另外一个方法 如下图：
 
-![img](file:///c:/users/asus/appdata/local/ynote/data/m13037188107_1@163.com/efa0b57f75e84b47989d25a9bfb1f6bd/clipboard.png)
+![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/clipboard3.png)
 
 这个方法里面用到了一个类 SpringFactoriesLoader 这个类属于Spring框架私有的一种扩展方案，其主要功能就是从指定的配置文件META-INF/spring.factories加载配置类。
 
 看下图：
 
-![img](file:///c:/users/asus/appdata/local/ynote/data/m13037188107_1@163.com/6ab1cfbbe366483bbb89577bfa6d7757/clipboard.png)
+![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/clipboard4.png)
 
 而这个指定的配置文件位置在这里：
 
-![img](file:///c:/users/asus/appdata/local/ynote/data/m13037188107_1@163.com/ac64a751451b47c4ae58073d0186ba24/clipboard.png)
+![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/clipboard4.png)
 
 我们可以看到这里面有很多的定义好的配置类，比如 jpa，mongo，redis等等的配置类
 
