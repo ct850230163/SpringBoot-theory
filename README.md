@@ -53,7 +53,7 @@ Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了
 
 
 
-这里面很重要的是接口 ImportSelector有一个方法为：**selectImports** 而AutoConfigurationImportSelector 实现了这个方法，如下图所示：
+这里面很重要的是接口 ImportSelector有一个方法为：**selectImports()** 而AutoConfigurationImportSelector 实现了这个方法，如下图所示：
 
 ![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/clipboard2.png)
 
