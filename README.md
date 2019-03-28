@@ -7,13 +7,13 @@
 
 **1.springboot 启动流程图**
 
-![img](c:/users/asus/appdata/local/ynote/data/m13037188107_1@163.com/ad539b9be6f544e3b82f844c4ed445fa/springboot-%E5%90%AF%E5%8A%A8%E5%8E%9F%E7%90%86.png)
+![](C:\Users\asus\Desktop\springboot-启动原理.png)
 
 
 
 **2.springboot原理图**
 
-![img](c:/users/asus/appdata/local/ynote/data/m13037188107_1@163.com/51acaeceecee48fabf3026bfe149c0c5/springboot%E5%8E%9F%E7%90%86%E5%9B%BE.png)
+![img](C:\Users\asus\Desktop\springboot原理图.png)
 
 说一下我自己的理解 ：
 
@@ -21,7 +21,7 @@ Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了
 
 @Configuration（其实依赖的是@SpringBootConfiguration 但是点开发现还是依赖的@Configuration） ，@EnableAutoConfiguration ，@ComponentScan 
 
-![img](file:///c:/users/asus/appdata/local/ynote/data/m13037188107_1@163.com/91d440004d8e4e5ab91a130e0a4a2491/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20190328165544.png)
+![img](C:\Users\asus\Desktop\微信截图_20190328165544.png)
 
 
 
@@ -37,11 +37,11 @@ Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了
 
 这个类是怎么实现的呢？  我们来分析一下：
 
-![img](file:///c:/users/asus/appdata/local/ynote/data/m13037188107_1@163.com/34361d1de2064a2eb89cc841b13817f7/clipboard.png)
+![img](C:\Users\asus\Desktop\clipboard1.png)
 
 主要是引入了这个组件类 EnableAutoConfigurationImportSelector ，而这个类也是继承了父类AutoConfigurationImportSelector, 我们一路找可以找到这样的继承关系
 
-![img](file:///c:/users/asus/appdata/local/ynote/data/m13037188107_1@163.com/b52524e2e1864d019fb6a8de524d4931/clipboard.png)
+![img](C:\Users\asus\Desktop\1112095-20181115152043749-1596939041.png)
 
 （图片是从别人那里copy来的 侵删）
 
