@@ -40,7 +40,7 @@ Springboot 基于注解启动。 @SpringbootApplication启动的时候 依赖了
 
 主要是引入了这个组件类 EnableAutoConfigurationImportSelector ，而这个类也是继承了父类AutoConfigurationImportSelector, 我们一路找可以找到这样的继承关系
 
-![img](C:\Users\asus\Desktop\1112095-20181115152043749-1596939041.png)
+![img](https://github.com/ct850230163/SpringBoot-theory/blob/master/images/1112095-20181115152043749-1596939041.png)
 
 （图片是从别人那里copy来的 侵删）
 
